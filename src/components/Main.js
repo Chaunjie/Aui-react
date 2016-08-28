@@ -49,6 +49,9 @@ class AppComponent extends React.Component {
             <ListCell className="test" type="arrow-right" onClick={this.handleClick.bind(this, 'alertMain')}>
               Alert
             </ListCell>
+            <ListCell className="test" type="arrow-right" onClick={this.handleClick.bind(this, 'modalMain')}>
+              Modal
+            </ListCell>
           </Listview>
         </Container>
       </div>

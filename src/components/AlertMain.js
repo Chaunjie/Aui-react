@@ -32,7 +32,7 @@ export default class AlertMain extends React.Component {
   render() {
     return (
       <Container className="button-container aui-content-padded">
-        <p className="aui-text-center">Toast</p>
+        <p className="aui-text-center">Alert</p>
         <p className="aui-text-center">
           <button className="aui-btn-success aui-btn-block" onClick={this.showDoubleAlert.bind(this)}>多按钮Alert</button>
         </p>
