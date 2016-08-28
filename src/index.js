@@ -11,6 +11,7 @@ import SearchBarMain from 'components/SearchMain';
 import TabBarMain from 'components/FootBarMain';
 import TabMain from 'components/TabMain';
 import ToastMain from 'components/ToastMain';
+import AlertMain from 'components/AlertMain';
 import RefreshLoad from 'components/PullRefresh';
 
 class App extends React.Component {
@@ -37,6 +38,7 @@ ReactDOM.render((
       <Route key="tabBarMain" path="/tabBarMain" component={TabBarMain}/>
       <Route key="tabMain" path="/tabMain" component={TabMain}/>
       <Route key="toastMain" path="/toastMain" component={ToastMain}/>
+      <Route key="alertMain" path="/alertMain" component={AlertMain}/>
     </Route>
   </Router>
 ), document.getElementById('app'));

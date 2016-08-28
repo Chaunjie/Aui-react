@@ -18,6 +18,9 @@ class AppComponent extends React.Component {
       <div className="index">
         <Container className="xudao">
           <Listview className="xudao">
+            <ListCell className="test" type="arrow-right" badge={badge} onClick={this.handleClick.bind(this, 'searchBarMain')}>
+              搜索条
+            </ListCell>
             <ListCell className="test" type="arrow-right" onClick={this.handleClick.bind(this, 'button')}>
               按钮
             </ListCell>
@@ -31,9 +34,6 @@ class AppComponent extends React.Component {
             <ListCell className="test" type="arrow-right" onClick={this.handleClick.bind(this, 'sixteenGridMain')}>
               十六宫格
             </ListCell>
-            <ListCell className="test" type="arrow-right" badge={badge} onClick={this.handleClick.bind(this, 'searchBarMain')}>
-              搜索条
-            </ListCell>
             <ListCell className="test" type="arrow-right" onClick={this.handleClick.bind(this, 'Refresh')}>
               上拉加载下拉刷新
             </ListCell>
@@ -45,6 +45,9 @@ class AppComponent extends React.Component {
             </ListCell>
             <ListCell className="test" type="arrow-right" onClick={this.handleClick.bind(this, 'toastMain')}>
               Toast
+            </ListCell>
+            <ListCell className="test" type="arrow-right" onClick={this.handleClick.bind(this, 'alertMain')}>
+              Alert
             </ListCell>
           </Listview>
         </Container>
