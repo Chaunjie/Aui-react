@@ -1,0 +1,41 @@
+.aui-grid-nine li:after {
+  border-right: 1px solid #c8c7cc;
+  border-left: none;
+}
+
+.aui-grid-nine:after {
+  border-right: none;
+  border-right: 1px solid #c8c7cc;
+}
+
+.aui-grid-nine {
+  overflow: hidden;
+}
+
+.aui-grid-nine li:after {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transform-origin: 0 0;
+  -webkit-transform: scale(1);
+  border-left: 1px solid #c8c7cc;
+  border-bottom: 1px solid #c8c7cc;
+  border-right: 1px solid #c8c7cc;
+}
+
+.aui-grid-nine li:nth-child(3n+2):after, .aui-grid-nine li:nth-child(3n+1):after {
+  border-left: none;
+}
+
+.aui-grid-nine li:nth-child(3n):after {
+  border-right: none;
+}
+
+.aui-grid-nine li {
+  background: #fff;
+  padding: 15px 0;
+}

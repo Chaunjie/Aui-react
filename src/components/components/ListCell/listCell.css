@@ -1,0 +1,97 @@
+.aui-list-view-cell {
+    position: relative;
+    padding: 12px 15px;
+    overflow: hidden;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-touch-callout: none;
+
+}
+.aui-list-view-cell:after {
+    border-bottom: 1px solid #c8c7cc;
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-transform-origin: 0 0;
+    -webkit-transform: scale(1);
+    pointer-events: none;
+}
+.aui-list-view-cell:first-child:after {
+    border-top: 1px solid #c8c7cc;
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-transform-origin: 0 0;
+    -webkit-transform: scale(1);
+    pointer-events: none;
+}
+.aui-list-view-cell:last-child:after {
+    border-bottom: 1px solid #c8c7cc;
+}
+.aui-list-view-cell > a{
+    position: relative;
+    padding: inherit;
+    margin: -12px -15px;
+    display: block;
+    overflow: hidden;
+    color: inherit;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.aui-list-view-cell > a:active{
+    background: #f4f4f4;
+}
+.aui-list-view-cell > a.aui-active{
+    background-color: #eee;
+}
+.aui-list-view-cell > a.aui-ellipsis-1,
+.aui-list-view-cell > a.aui-ellipsis-2 {
+    padding-bottom: -4px;
+    padding-right: 30px;
+}
+.aui-list-view-cell p {
+    margin-bottom: 0;
+}
+/*列表页角标靠右*/
+.aui-list-view-cell > .aui-badge,
+.aui-list-view-cell > div > .aui-badge, .aui-list-view-cell > a > .aui-badge {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.aui-list-view-cell > div.aui-arrow-right > .aui-badge, .aui-list-view-cell > a.aui-arrow-right > .aui-badge {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+/*带有箭头的列表*/
+.aui-arrow-right:after {
+    font-family: 'auiicon';
+    font-size: inherit;
+    line-height: 1;
+    color: #bbbbbb;
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-font-smoothing: antialiased;
+}
+.aui-arrow-right:after {
+    font-family:"auiicon" !important;
+    right: 15px;
+    content: '\e6a3';
+}

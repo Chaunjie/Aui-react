@@ -1,0 +1,24 @@
+.common-col .col{
+  background:#fff;
+  font-size:12px;
+}
+
+.common-col > div{
+  width:100%;
+  overflow: hidden;
+  margin-top:10px;
+}
+
+.searchBar-container .aui-searchbar-wrap, .footerBar .aui-bar-tab, .tabBar .aui-tab {
+  margin-bottom:10px;
+}
+
+.footerBar .tab-content{
+  height:200px;
+  background:#fff;
+}
+
+.footerBar > .tab-content > .content{
+  height:200px;
+  background:#fff;
+}

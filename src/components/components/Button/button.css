@@ -1,0 +1,140 @@
+/*按钮样式*/
+button, .aui-btn {
+    position: relative;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    background-color: #ecf0f1;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid #ecf0f1;
+    border-radius: 4px;
+}
+.aui-btn:active {
+    color: #ffffff;
+    background-color: #bdc3c7;
+}
+.aui-btn-default {
+    color: #ffffff;
+    background-color: #bdc3c7;
+    border: 1px solid #bdc3c7;
+}
+.aui-btn-primary {
+    color: #ffffff;
+    background-color: #1abc9c;
+    border: 1px solid #1abc9c;
+}
+.aui-btn-primary.active, .aui-btn-primary:active {
+    color: #fff;
+    background-color: #16a085;
+    border: 1px solid #16a085;
+}
+.aui-btn-success {
+    color: #ffffff;
+    background-color: #2ecc71;
+    border: 1px solid #2ecc71;
+}
+.aui-btn-success.active, .aui-btn-success:active {
+    color: #fff;
+    background-color: #27ae60;
+    border: 1px solid #27ae60;
+}
+.aui-btn-info {
+    color: #ffffff;
+    background-color: #3498db;
+    border: 1px solid #3498db;
+}
+.aui-btn-info.active, .aui-btn-info:active {
+    color: #fff;
+    background-color: #2980b9;
+    border: 1px solid #2980b9;
+}
+.aui-btn-warning {
+    color: #ffffff;
+    background-color: #f1c40f;
+    border: 1px solid #f1c40f;
+}
+.aui-btn-warning.active, .aui-btn-warning:active {
+    color: #fff;
+    background-color: #faa732;
+    border: 1px solid #faa732;
+}
+.aui-btn-danger {
+    color: #ffffff;
+    background-color: #e74c3c;
+    border: 1px solid #e74c3c;
+}
+.aui-btn-danger.active, .aui-btn-danger:active {
+    color: #fff;
+    background-color: #c0392b;
+    border: 1px solid #c0392b;
+}
+.aui-btn-block {
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    margin-bottom: 0;
+    font-size: 18px;
+}
+.aui-btn .aui-iconfont, .aui-btn-block .aui-iconfont {
+    margin-right: 6px;
+}
+.aui-btn .aui-badge, .aui-btn-block .aui-badge {
+    margin-left: 6px;
+}
+.aui-btn-outlined {
+    background: transparent;
+}
+.aui-btn-default.aui-btn-outlined {
+    color: #bdc3c7;
+}
+.aui-btn-primary.aui-btn-outlined {
+    color: #16a085;
+}
+.aui-btn-success.aui-btn-outlined {
+    color: #27ae60;
+}
+.aui-btn-info.aui-btn-outlined {
+    color: #2980b9;
+}
+.aui-btn-warning.aui-btn-outlined {
+    color: #faa732;
+}
+.aui-btn-danger.aui-btn-outlined {
+    color: #c0392b;
+}
+.aui-btn-default.aui-btn-outlined:active {
+    background: #bdc3c7;
+    color: #ffffff;
+}
+.aui-btn-primary.aui-btn-outlined:active {
+    background: #16a085;
+    color: #ffffff;
+}
+.aui-btn-success.aui-btn-outlined:active {
+    background: #27ae60;
+    color: #ffffff;
+}
+.aui-btn-info.aui-btn-outlined:active {
+    background: #2980b9;
+    color: #ffffff;
+}
+.aui-btn-warning.aui-btn-outlined:active {
+    background: #faa732;
+    color: #ffffff;
+}
+.aui-btn-danger.aui-btn-outlined:active {
+    background: #c0392b;
+    color: #ffffff;
+}

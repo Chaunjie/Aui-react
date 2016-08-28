@@ -1,0 +1,36 @@
+.aui-grid-sixteen li:after {
+  border-right: 1px solid #c8c7cc;
+  border-left: none;
+}
+
+.aui-grid-sixteen:after {
+  border-right: none;
+  border-right: 1px solid #c8c7cc;
+}
+
+.aui-grid-sixteen {
+  overflow: hidden;
+}
+
+.aui-grid-sixteen li:after {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transform-origin: 0 0;
+  -webkit-transform: scale(1);
+  border-bottom: 1px solid #c8c7cc;
+  border-right: 1px solid #c8c7cc;
+}
+
+.aui-grid-sixteen li:nth-child(4n):after {
+  border-right: none;
+}
+
+.aui-grid-sixteen li {
+  background: #fff;
+  padding: 15px 0;
+}

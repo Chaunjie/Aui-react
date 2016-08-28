@@ -1,0 +1,45 @@
+/*栅格类*/
+.aui-col-xs-1,.aui-col-xs-2,.aui-col-xs-3,.aui-col-xs-4,.aui-col-xs-5,.aui-col-xs-6,.aui-col-xs-7,.aui-col-xs-8,.aui-col-xs-9,.aui-col-xs-10,.aui-col-xs-11,.aui-col-5 {
+    position: relative;
+    float: left;
+}
+.aui-col-xs-12 {
+    width: 100%;
+    position: relative;
+}
+.aui-col-xs-11 {
+    width: 91.66666667%;
+}
+.aui-col-xs-10 {
+    width: 83.33333333%;
+}
+.aui-col-xs-9 {
+    width: 75%;
+}
+.aui-col-xs-8 {
+    width: 66.66666667%;
+}
+.aui-col-xs-7 {
+    width: 58.33333333%;
+}
+.aui-col-xs-6 {
+    width: 50%;
+}
+.aui-col-xs-5 {
+    width: 41.66666667%;
+}
+.aui-col-xs-4 {
+    width: 33.33333333%;
+}
+.aui-col-xs-3 {
+    width: 25%;
+}
+.aui-col-xs-2 {
+    width: 16.66666667%;
+}
+.aui-col-xs-1 {
+    width: 8.33333333%;
+}
+.aui-col-5 {
+    width: 20%;
+}

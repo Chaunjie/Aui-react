@@ -1,0 +1,35 @@
+/*角标*/
+.aui-badge {
+    display: inline-block;
+    padding: 3px 6px;
+    font-size: 12px;
+    line-height: 1;
+    color: #333;
+    background-color: #bdc3c7;
+    border-radius: 100px;
+}
+
+.aui-badge-primary {
+    color: #ffffff;
+    background-color: #1abc9c;
+}
+
+.aui-badge-success {
+    color: #ffffff;
+    background-color: #2ecc71;
+}
+
+.aui-badge-info {
+    color: #ffffff;
+    background-color: #3498db;
+}
+
+.aui-badge-warning {
+    color: #ffffff;
+    background-color: #f1c40f;
+}
+
+.aui-badge-danger {
+    color: #ffffff;
+    background-color: #e74c3c;
+}

@@ -1,0 +1,585 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for components/Main.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">all files</a> / <a href="index.html">components/</a> Main.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">95.83% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>46/48</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>31/31</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>12/12</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">80% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>8/10</span>
+      </div>
+      <div class='fl pad1y'>
+        <span class="strong">4 statements, 2 functions, 13 branches</span>
+        <span class="quiet">Ignored</span>  &nbsp;&nbsp;&nbsp;&nbsp;
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">require('normalize.css/normalize.css');
+require('styles/Main.css');
+&nbsp;
+import React from 'react';
+import {Link} from 'react-router';
+&nbsp;
+class AppComponent extends React.Component {
+  constructor(props){
+    super(props);
+  }
+&nbsp;
+  render() {
+    return (
+      &lt;div className="index"&gt;
+        &lt;div className="aui-content"&gt;
+          &lt;li className="aui-list-view-cell" onClick={this.handleClick}&gt;
+            &lt;div className="aui-arrow-right aui-text-danger"&gt;
+              &lt;i className="aui-iconfont aui-icon-sort aui-bg-danger"&gt;&lt;/i&gt;更新说明
+              &lt;span className="aui-badge aui-badge-danger aui-pull-right"&gt;V 1.2.0&lt;/span&gt;
+            &lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li className="aui-list-view-cell"  onclick="share()" id="share"&gt;
+            &lt;div className="aui-arrow-right aui-text-primary"&gt;
+                &lt;span&gt;分享至朋友圈&lt;/span&gt;
+            &lt;/div&gt;
+          &lt;/li&gt;
+        &lt;/div&gt;
+&nbsp;
+        &lt;div className="aui-content"&gt;
+          &lt;ul className="aui-list-view"&gt;
+            &lt;li className="aui-list-view-cell"  onclick="openWin('pull_refresh')"&gt;
+              &lt;a href="#SearchBar" className="aui-arrow-right"&gt;搜索条&lt;span className="aui-badge aui-badge-danger"&gt;新增&lt;/span&gt;&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li className="aui-list-view-cell"  onclick="openWin('pull_refresh_2')"&gt;
+             &lt;Link to="/Tabs/12" className="aui-arrow-right"&gt;Tabs&lt;span className="aui-badge aui-badge-danger"&gt;新增&lt;/span&gt;&lt;/Link&gt;
+            &lt;/li&gt;
+            &lt;li className="aui-list-view-cell"  onclick="openWin('slide')"&gt;
+              &lt;Link to="/nineGrid/13" className="aui-arrow-right"&gt;九宫格&lt;span className="aui-badge aui-badge-danger"&gt;新增&lt;/span&gt;&lt;/Link&gt;
+            &lt;/li&gt;
+            &lt;li className="aui-list-view-cell"  onclick="openWin('list_swipe')"&gt;
+              &lt;Link to="/example" className="aui-arrow-right"&gt;列表右滑显示菜单&lt;span className="aui-badge aui-badge-danger"&gt;新增&lt;/span&gt;&lt;/Link&gt;
+            &lt;/li&gt;
+            &lt;li className="aui-list-view-cell"  onclick="openWin('accordion')"&gt;
+              &lt;a className="aui-arrow-right"&gt;手风琴折叠面板&lt;span className="aui-badge aui-badge-danger"&gt;新增&lt;/span&gt;&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li className="aui-list-view-cell"  onclick="openWin('flex')"&gt;
+              &lt;a className="aui-arrow-right"&gt;AUI Flex&lt;span className="aui-badge aui-badge-warning"&gt;优化&lt;/span&gt;&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li className="aui-list-view-cell"  onclick="openWin('border')"&gt;
+              &lt;a className="aui-arrow-right"&gt;边框样式&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li className="aui-list-view-cell"  onclick="openWin('indexed_list')"&gt;
+              &lt;a className="aui-arrow-right"&gt;索引列表&lt;span className="aui-badge aui-badge-success"&gt;优化&lt;/span&gt;&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li className="aui-list-view-cell"  onclick="openSlider()"&gt;
+              &lt;a className="aui-arrow-right"&gt;上下滑动全屏展示&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li className="aui-list-view-cell"  onclick="openWin('calendar')"&gt;
+              &lt;a className="aui-arrow-right"&gt;日历&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li className="aui-list-view-cell"  onclick="openWin('calendar_slide')"&gt;
+              &lt;a className="aui-arrow-right"&gt;日历上下滑动展示&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li className="aui-list-view-cell"  onclick="openWin('button')"&gt;
+              &lt;a className="aui-arrow-right"&gt;按钮&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li className="aui-list-view-cell"  onclick="openWin('form')"&gt;
+              &lt;a className="aui-arrow-right"&gt;表单&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li className="aui-list-view-cell"  onclick="openWin('switch')"&gt;
+              &lt;a className="aui-arrow-right"&gt;switch开关&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li className="aui-list-view-cell"  onclick="openWin('checkbox')"&gt;
+              &lt;a className="aui-arrow-right"&gt;checkbox选择&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li className="aui-list-view-cell"  onclick="openWin('radio')"&gt;
+              &lt;a className="aui-arrow-right"&gt;radio选择&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li className="aui-list-view-cell"  onclick="openWin('list')"&gt;
+              &lt;a className="aui-arrow-right"&gt;普通列表&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li className="aui-list-view-cell"  onclick="openWin('list_arrow')"&gt;
+              &lt;a className="aui-arrow-right"&gt;带有角标和箭头的列表&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li className="aui-list-view-cell"  onclick="openWin('list_thumb')"&gt;
+              &lt;a className="aui-arrow-right"&gt;缩略图列表&lt;/a&gt;
+            &lt;/li&gt;
+&nbsp;
+            &lt;li className="aui-list-view-cell"  onclick="openWin('list_image')"&gt;
+              &lt;a className="aui-arrow-right"&gt;图片列表布局&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li className="aui-list-view-cell"  onclick="openWin('header_bar')"&gt;
+              &lt;a className="aui-arrow-right"&gt;导航栏&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li className="aui-list-view-cell"  onclick="openWin('footer_tab')"&gt;
+              &lt;a className="aui-arrow-right"&gt;底部工具栏&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li className="aui-list-view-cell"  onclick="openWin('list_nine')"&gt;
+              &lt;a className="aui-arrow-right"&gt;九宫格&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li className="aui-list-view-cell"  onclick="openWin('list_sixteen')"&gt;
+              &lt;a className="aui-arrow-right"&gt;十六宫格&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li className="aui-list-view-cell"  onclick="openWin('loading')"&gt;
+              &lt;a className="aui-arrow-right"&gt;个性loading&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li className="aui-list-view-cell"  onclick="openWin('tab')"&gt;
+              &lt;a className="aui-arrow-right"&gt;TAB菜单&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li className="aui-list-view-cell"  onclick="openWin('contact_book')"&gt;
+              &lt;a className="aui-arrow-right"&gt;通讯录&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li className="aui-list-view-cell"  onclick="openWin('chat')"&gt;
+              &lt;a className="aui-arrow-right"&gt;聊天界面&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li className="aui-list-view-cell"  onclick="openWin('iconfont')"&gt;
+              &lt;a className="aui-arrow-right"&gt;图标&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li className="aui-list-view-cell"  onclick="openWin('list_counter')"&gt;
+              &lt;a className="aui-arrow-right"&gt;计数列表(购物车类样式疯狂拼合)&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li className="aui-list-view-cell"  onclick="openWin('dialog')"&gt;
+              &lt;a className="aui-arrow-right"&gt;弹出提示样式(dialog)&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li className="aui-list-view-cell"  onclick="openWin('status')"&gt;
+              &lt;a className="aui-arrow-right"&gt;带状态的表单／列表&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li className="aui-list-view-cell"  onclick="openWin('toast')"&gt;
+              &lt;a className="aui-arrow-right"&gt;Toast&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li className="aui-list-view-cell"  onclick="openWin('tips')"&gt;
+              &lt;a className="aui-arrow-right"&gt;信息提示条&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li className="aui-list-view-cell"  onclick="openWin('searchbar')"&gt;
+              &lt;a className="aui-arrow-right"&gt;搜索条&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li className="aui-list-view-cell"  onclick="openWin('range')"&gt;
+              &lt;a className="aui-arrow-right"&gt;滑块&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li className="aui-list-view-cell"  onclick="openWin('timeline')"&gt;
+              &lt;a className="aui-arrow-right"&gt;时间轴&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li className="aui-list-view-cell"  onclick="openWin('progress')"&gt;
+              &lt;a className="aui-arrow-right"&gt;进度条&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li className="aui-list-view-cell"  onclick="openWin('alert')"&gt;
+              &lt;a className="aui-arrow-right"&gt;自定义弹出层&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li className="aui-list-view-cell"  onclick="openWin('waterfall')"&gt;
+              &lt;a className="aui-arrow-right"&gt;瀑布流&lt;/a&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    );
+  }
+&nbsp;
+  handleClick(){
+<span class="cstat-no" title="statement not covered" >    a</span>lert(666);
+  }
+&nbsp;
+  testFun(a, b){
+<span class="cstat-no" title="statement not covered" >    r</span>eturn a + b;
+  }
+}
+&nbsp;
+AppComponent.defaultProps = {
+&nbsp;
+};
+&nbsp;
+export default AppComponent;
+&nbsp;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Wed Jun 22 2016 16:05:49 GMT+0800 (CST)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>

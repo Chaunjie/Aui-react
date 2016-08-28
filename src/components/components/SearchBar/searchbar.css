@@ -1,0 +1,62 @@
+/*搜索条*/
+.aui-searchbar-wrap {
+  display: -webkit-box;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  background-color: #ebeced;
+  height: 50px;
+}
+.aui-searchbar-wrap.focus {
+  -webkit-box-pack: start;
+}
+.aui-searchbar {
+  margin: 0 10px;
+  background: #ffffff;
+  border-radius: 5px;
+  height: 32px;
+  line-height: 32px;
+  color: #c8c7cc;
+  font-size: 14px;
+  width: 100%;
+  position: relative;
+  padding-left: 4px;
+  -webkit-box-flex: 1;
+  display: -webkit-box;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+}
+.aui-searchbar input {
+  color: #333333;
+  width: 100%;
+  /*padding: 5px 0;*/
+  border: 0;
+  -webkit-appearance: none;
+}
+.aui-searchbar .aui-icon-search {
+  line-height: 30px;
+  margin-right: 5px;
+}
+.aui-searchbar-wrap .aui-searchbar-input,
+.aui-searchbar-wrap .aui-searchbar-cancel,
+.aui-searchbar-wrap .aui-icon-roundclosefill {
+  display: none;
+}
+.aui-searchbar-input {
+  -webkit-box-flex: 1;
+}
+.aui-searchbar-wrap .aui-searchbar-cancel {
+  font-size: 16px;
+  padding: 5px 15px 5px 0;
+}
+.aui-searchbar-wrap.focus .aui-searchbar-input,
+.aui-searchbar-wrap.focus .aui-searchbar-cancel,
+.aui-searchbar-wrap.focus .aui-icon-roundclosefill{
+  display: block;
+}
+.aui-searchbar-wrap.focus .aui-searchbar-text {
+  display: none;
+}
+.aui-searchbar-wrap .aui-icon-roundclosefill {
+  margin-right: 5px;
+  font-size: 20px;
+}

@@ -1,0 +1,56 @@
+.aui-bar-tab {
+  width: 100%;
+  background-color: #fff;
+  display: box;
+  display: -webkit-box;
+  box-sizing: border-box;
+  font-size: 12px;
+  height: 55px;
+}
+
+.aui-bar-tab li {
+  position: relative;
+  text-align: center;
+  color: #666;
+  width: 100%;
+  box-flex: 1;
+  -webkit-box-flex: 1;
+  box-sizing: border-box;
+}
+
+.aui-bar-tab .aui-iconfont {
+  font-size: 22px;
+  color: #8f8f94;
+  padding-top: 5px;
+  height: 30px;
+  line-height: 30px;
+  display: inline-block;
+}
+
+.aui-bar-tab .active .aui-iconfont, .aui-bar-tab .active p {
+  color: #16a085;
+}
+
+.aui-bar-tab .active-dark .aui-iconfont, .aui-bar-tab .active-dark p {
+  color: #34495e;
+}
+
+.aui-bar-tab .active-primary .aui-iconfont, .aui-bar-tab .active-primary p {
+  color: #1abc9c;
+}
+
+.aui-bar-tab .active-info .aui-iconfont, .aui-bar-tab .active-info p {
+  color: #2980b9;
+}
+
+.aui-bar-tab .active-danger .aui-iconfont, .aui-bar-tab .active-danger p {
+  color: #c0392b;
+}
+
+.aui-bar-tab .active-success .aui-iconfont, .aui-bar-tab .active-success p {
+  color: #27ae60;
+}
+
+.aui-bar-tab .active-warning .aui-iconfont, .aui-bar-tab .active-warning p {
+  color: #faa732;
+}

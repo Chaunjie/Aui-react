@@ -1,0 +1,12 @@
+/*列表*/
+.aui-list-view:last-child {
+    margin-bottom: 15px;
+}
+.aui-list-view {
+    position: relative;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 15px;
+    list-style: none;
+    background-color: #fff;
+}
