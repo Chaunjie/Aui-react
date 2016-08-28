@@ -30,7 +30,8 @@ export default class Searchbar extends React.Component {
   render() {
     const props = this.props;
     const placeholder = props.placeholder ? props.placeholder : '请输入搜索内容';
-    const cancelBtnClass = props.cancelBtnClass ? props.cancelBtnClass : 'aui-text-info'
+    const cancelBtnClass = props.cancelBtnClass ? props.cancelBtnClass : 'aui-text-info';
+   // const input = <input type="text" placeholder={placeholder} value={this.state.query} ref="search" onChange={this.changeValue.bind(this)} onKeyPress={(event) => this.keyPress(event.key)}/>
     return React.createElement(
       'div',
       {className: this.state.classList},
@@ -55,9 +56,8 @@ export default class Searchbar extends React.Component {
             React.createElement(
               'input',
               {
-                type: 'text',
+                type: 'search',
                 placeholder: placeholder,
-                autofocus: this.state.autoFocus,
                 value: this.state.query,
                 ref: 'search',
                 onChange: this.changeValue.bind(this),

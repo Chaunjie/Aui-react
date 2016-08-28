@@ -12,16 +12,16 @@ class ButtonMain extends React.Component {
 
   render() {
     return (
-      <Block className="searchBar-container">
+      <div className="searchBar-container">
         <SearchBar/>
         <SearchBar placeholder="请输入搜索内容" cancelBtnClass="aui-text-success" query="123456"/>
         <SearchBar placeholder="取消回调" cancelBtnClass="aui-text-danger" cancelClick={this.handleClick.bind(this)}/>
-      </Block>
+      </div>
     );
   }
 
   handleClick() {
-    alert(666);
+    alert('监听取消按钮成功');
   }
 }
 

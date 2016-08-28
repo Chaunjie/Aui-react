@@ -30,7 +30,9 @@
   width: 100%;
   /*padding: 5px 0;*/
   border: 0;
+  padding:0 !important;
   -webkit-appearance: none;
+  z-index: 1000000;
 }
 .aui-searchbar .aui-icon-search {
   line-height: 30px;

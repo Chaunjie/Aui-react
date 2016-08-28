@@ -8,7 +8,7 @@ require('styles/pullRefresh.css');
 
 import React from 'react';
 import Refresh from './components/RefreshLoadmore';
-import Tap from 'xu-rc-tap';
+//import Tap from 'xu-rc-tap';
 
 export default class RefreshLoad extends React.Component {
   constructor(props) {
@@ -41,7 +41,7 @@ export default class RefreshLoad extends React.Component {
 
                 return (
                   <div className="card-list"  key={key} option={option}>
-                    <Tap onTap={this.testTap.bind(this)}>
+                    {/*<Tap onTap={this.testTap.bind(this)}>*/}
                       <div className="card-list-header">
                         卡片布局头部区域
                       </div>
@@ -51,7 +51,7 @@ export default class RefreshLoad extends React.Component {
                       <div className="card-list-footer">
                         底部区域
                       </div>
-                    </Tap>
+                    {/*</Tap>*/}
                   </div>
                 )
               }.bind(this))
