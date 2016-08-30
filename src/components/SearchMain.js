@@ -21,6 +21,7 @@ class ButtonMain extends React.Component {
   }
 
   handleClick() {
+    console.log(0);
     alert('监听取消按钮成功');
   }
 }

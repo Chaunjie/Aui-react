@@ -52,11 +52,6 @@ class NineGridMain extends React.Component {
         className: 'aui-text-center',
         onClick: this.handleClick.bind(this),
         children: <Block><span className="aui-iconfont aui-icon-deliver aui-text-danger"></span><p>栏目</p></Block>
-      },
-      {
-        className: 'aui-text-center',
-        onClick: this.handleClick.bind(this),
-        children: <Block><span className="aui-iconfont aui-icon-evaluate aui-text-danger"></span><p>栏目</p></Block>
       }
     ];
     return (
