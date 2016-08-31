@@ -62,6 +62,7 @@ class NineGridMain extends React.Component {
   }
 
   handleClick(i) {
+    console.log(i);
     alert(i);
   }
 }
