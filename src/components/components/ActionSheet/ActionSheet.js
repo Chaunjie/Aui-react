@@ -25,25 +25,34 @@ export default class ActionSheet extends React.Component {
 
     return React.createElement(
       'div',
-      {className: 'overflow animated ' + this.state.overflowClass},
+      {className: 'overflow animated ' + this.state.overflowClass, onClick: this.closeActionSheet.bind(this)},
       React.createElement(
         'div',
         {className: 'actionSheet animated ' + this.state.animateClass},
         React.createElement(
           'div',
           {className: 'actionSheet-menus'},
-          props.btns.map(function(r, i){
-            const key = 'actionSheetBtn'+i
+          props.btns.map(function (r, i) {
+            const key = 'actionSheetBtn' + i;
             return React.createElement(
               'div',
-              {className:'actionSheet-btn sure-btn', style:{color:r.color}, key:key, onClick: this.handleClick.bind(this, i)},
+              {
+                className: 'actionSheet-btn sure-btn',
+                style: {color: r.color},
+                key: key,
+                onClick: this.handleClick.bind(this, i)
+              },
               r.text
             )
           }.bind(this))
         ),
         React.createElement(
           'div',
-          {className: 'actionSheet-cencel actionSheet-btn', style:{color:props.cancelBtn.color}, onClick: this.handleClick.bind(this, 'cancel')},
+          {
+            className: 'actionSheet-cencel actionSheet-btn',
+            style: {color: props.cancelBtn.color},
+            onClick: this.handleClick.bind(this, 'cancel')
+          },
           (props.cancelBtn && props.cancelBtn.text) ? props.cancelBtn.text : '取消'
         )
       )
@@ -58,9 +67,12 @@ export default class ActionSheet extends React.Component {
     }, function () {
       setTimeout(function () {
         this.props.closeClick ? this.props.closeClick(i) : '';
-      }.bind(this), 600)
+      }.bind(this), 600);
     })
 
+  }
+
+  closeActionSheet(e) {
   }
 
 }

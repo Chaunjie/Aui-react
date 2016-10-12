@@ -1,6 +1,7 @@
 import 'core-js/fn/object/assign';
 import React from 'react';
 import ReactDOM from 'react-dom';
+
 import { Router, Route, IndexRoute, browserHistory} from 'react-router';
 import Main from 'components/Main';
 import Button from 'components/ButtonMain';
@@ -15,13 +16,28 @@ import AlertMain from 'components/AlertMain';
 import ModalMain from 'components/ModalMain';
 import ActionSheetMain from 'components/ActionSheetMain';
 import RefreshLoad from 'components/PullRefresh';
+import Page from 'components/Page';
+
+require('./styles/translate.css');
 
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
+  componentDidMount() {
+
+  }
+
   render() {
     return (
-      <div>
-        {this.props.children}
-      </div>
+      <Page>
+
+          {React.cloneElement(this.props.children, {
+            key: this.props.location.pathname
+          })}
+
+      </Page>
     );
   }
 }
@@ -31,7 +47,7 @@ ReactDOM.render((
   <Router key="router" history={ browserHistory }>
     <Route path="/" component={App}>
       <IndexRoute key="main" component={Main}/>
-      <Route key="Refresh" path="/Refresh" component={RefreshLoad}/>
+      <Route path="/Refresh" component={RefreshLoad}/>
       <Route key="button" path="/button" component={Button}/>
       <Route key="col" path="/col" component={ColMain}/>
       <Route key="nineGridMain" path="/nineGridMain" component={NineGridMain}/>

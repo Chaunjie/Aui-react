@@ -10,6 +10,8 @@ export default class ActionSheetMain extends React.Component {
   constructor(props) {
     super(props);
 
+    //console.log(this.props.location.state);
+    //console.log(window.location.href);
     this.state = {
       actionSheetHtml:'',
       btns : [
@@ -47,12 +49,6 @@ export default class ActionSheetMain extends React.Component {
 
   showActionSheet() {
     if(!this.state.actionSheetHtml){
-      const btns = [
-        {
-          text:'确定',
-          color:'green'
-        }
-      ];
       const alert = <ActionSheet btns={this.state.btns} cancelBtn={this.state.cancelBtn} closeClick={this.closeClick.bind(this)}></ActionSheet>
       this.setState({
         actionSheetHtml: alert
